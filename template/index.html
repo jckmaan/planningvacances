@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mon Planning</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ========================================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🧳
+        </div>
+
+        <h1>
+            Mon Planning
+        </h1>
+
+        <p class="subtitle">
+            Départ le 17 septembre 2026
+        </p>
+
+
+        <div class="countdown">
+
+            <span class="countdown-title">
+                Départ dans
+            </span>
+
+            <strong id="countdown">
+                Calcul...
+            </strong>
+
+        </div>
+
+
+        <div class="progress-container">
+
+            <div class="progress-header">
+
+                <span>
+                    Progression
+                </span>
+
+                <span id="progress-text">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="progress"
+                    class="progress"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="theme-button"
+            class="theme-button"
+        >
+            🌙 Mode sombre
+        </button>
+
+
+        <button
+            id="reset-button"
+            class="reset-button"
+        >
+            🔄 Réinitialiser
+        </button>
+
+    </aside>
+
+
+
+    <!-- ========================================= -->
+    <!-- CONTENU -->
+    <!-- ========================================= -->
+
+    <main class="content">
+
+
+        <div class="top">
+
+            <div>
+
+                <h2>
+                    Les 15 jours avant le départ
+                </h2>
+
+                <p>
+                    Organise tout avant le grand jour 🚀
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ========================================= -->
+        <!-- JOURS -->
+        <!-- ========================================= -->
+
+        <div class="days">
+
+
+            {% for jour in planning %}
+
+            <section
+                class="day-card"
+                data-day="{{ loop.index0 }}"
+            >
+
+
+                <div class="day-header">
+
+
+                    <div class="day-number">
+
+                        {% if loop.last %}
+
+                        🚀
+
+                        {% else %}
+
+                        {{ "%02d"|format(jour.jour) }}
+
+                        {% endif %}
+
+                    </div>
+
+
+                    <div class="day-info">
+
+                        <h3>
+
+                            {% if loop.last %}
+
+                            Jour du départ
+
+                            {% else %}
+
+                            Jour {{ jour.jour }}
+
+                            {% endif %}
+
+                        </h3>
+
+
+                        <span>
+
+                            {{ jour.date[8:10] }}/{{ jour.date[5:7] }}/{{ jour.date[0:4] }}
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="days-left">
+
+                        {% if loop.last %}
+
+                        DÉPART
+
+                        {% else %}
+
+                        J-{{ (planning|length - 1) - loop.index0 }}
+
+                        {% endif %}
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ================================= -->
+                <!-- TÂCHES -->
+                <!-- ================================= -->
+
+                <div class="tasks">
+
+
+                    {% for tache in jour.taches %}
+
+                    <div class="task">
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                class="task-checkbox"
+                                data-day="{{ loop.index0 }}"
+                                data-task="{{ loop.index0 }}"
+                                {% if tache.terminee %}checked{% endif %}
+                            >
+
+
+                            <span
+                                class="task-name {% if tache.terminee %}completed{% endif %}"
+                            >
+                                {{ tache.nom }}
+                            </span>
+
+                        </label>
+
+
+                        <button
+                            class="delete-task"
+                            data-day="{{ loop.index0 }}"
+                            data-task="{{ loop.index0 }}"
+                        >
+                            🗑️
+                        </button>
+
+
+                    </div>
+
+                    {% endfor %}
+
+
+                </div>
+
+
+
+                <!-- ================================= -->
+                <!-- AJOUT -->
+                <!-- ================================= -->
+
+                <div class="add-task">
+
+
+                    <input
+                        type="text"
+                        class="task-input"
+                        placeholder="Ajouter une tâche..."
+                    >
+
+
+                    <button
+                        class="add-button"
+                    >
+                        +
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+            {% endfor %}
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script>
+
+    const DATE_DEPART = "{{ date_depart }}";
+
+</script>
+
+
+<script
+    src="{{ url_for('static', filename='script.js') }}"
+></script>
+
+
+</body>
+
+</html>

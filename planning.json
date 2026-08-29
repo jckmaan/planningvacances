@@ -1,0 +1,312 @@
+[
+    {
+        "jour": 1,
+        "date": "17/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "✈️ Vol aller vers Montréal",
+                "terminee": false
+            },
+            {
+                "nom": "Installation à l'hébergement",
+                "terminee": false
+            },
+            {
+                "nom": "Balade tranquille dans le quartier",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 2,
+        "date": "18/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🏛️ Visite du Vieux-Montréal",
+                "terminee": false
+            },
+            {
+                "nom": "Visite de la Basilique Notre-Dame",
+                "terminee": false
+            },
+            {
+                "nom": "Promenade au Vieux-Port",
+                "terminee": false
+            },
+            {
+                "nom": "Tour de la Grande Roue",
+                "terminee": false
+            },
+            {
+                "nom": "Admirer le coucher de soleil",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 3,
+        "date": "19/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🌲 Randonnée au Mont-Royal",
+                "terminee": false
+            },
+            {
+                "nom": "Vue depuis le belvédère",
+                "terminee": false
+            },
+            {
+                "nom": "Pause au Lac aux Castors",
+                "terminee": false
+            },
+            {
+                "nom": "Découverte du Plateau-Mont-Royal",
+                "terminee": false
+            },
+            {
+                "nom": "Promenade rue Saint-Denis",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 4,
+        "date": "20/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🥯 Exploration du Mile End (Street art & boutiques)",
+                "terminee": false
+            },
+            {
+                "nom": "Déguster un authentique bagel montréalais",
+                "terminee": false
+            },
+            {
+                "nom": "Soirée animée dans le centre-ville",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 5,
+        "date": "21/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🦋 Visite du Jardin botanique & Biodôme",
+                "terminee": false
+            },
+            {
+                "nom": "Passage près du Stade olympique",
+                "terminee": false
+            },
+            {
+                "nom": "Promenade dans le Jardin de Chine",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 6,
+        "date": "22/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🛍️ Shopping au Centre-ville (rue Sainte-Catherine)",
+                "terminee": false
+            },
+            {
+                "nom": "Découverte de la ville souterraine (RÉSO)",
+                "terminee": false
+            },
+            {
+                "nom": "Visite et gourmandises au Marché Jean-Talon",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 7,
+        "date": "23/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🚲 Balade à vélo le long du Canal de Lachine",
+                "terminee": false
+            },
+            {
+                "nom": "Arrêt gourmand au Marché Atwater",
+                "terminee": false
+            },
+            {
+                "nom": "Soirée tranquille",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 8,
+        "date": "24/09/2026",
+        "lieu": "Montréal / Mont-Tremblant",
+        "taches": [
+            {
+                "nom": "🚙 Départ tôt de Montréal (1h30 à 2h de route)",
+                "terminee": false
+            },
+            {
+                "nom": "💦 Grosse journée nature au Parc national du Mont-Tremblant",
+                "terminee": false
+            },
+            {
+                "nom": "Randonnée vers les Chutes Croches / Chute du Diable",
+                "terminee": false
+            },
+            {
+                "nom": "Pique-nique au bord du lac et panorama",
+                "terminee": false
+            },
+            {
+                "nom": "Retour à Montréal en fin de journée",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 9,
+        "date": "25/09/2026",
+        "lieu": "Montréal / Laurentides",
+        "taches": [
+            {
+                "nom": "🏔️ Excursion au Mont-Tremblant / Laurentides",
+                "terminee": false
+            },
+            {
+                "nom": "Randonnée avec vue panoramique",
+                "terminee": false
+            },
+            {
+                "nom": "Visite du village piétonnier de Mont-Tremblant",
+                "terminee": false
+            },
+            {
+                "nom": "Retour à Montréal",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 10,
+        "date": "26/09/2026",
+        "lieu": "Montréal / Cantons-de-l'Est",
+        "taches": [
+            {
+                "nom": "🍁 Journée nature au Mont-Sutton / Cantons-de-l'Est",
+                "terminee": false
+            },
+            {
+                "nom": "Randonnée au milieu des paysages montagneux",
+                "terminee": false
+            },
+            {
+                "nom": "Route sur les petites routes panoramiques",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 11,
+        "date": "27/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "📸 Journée libre dans vos endroits préférés",
+                "terminee": false
+            },
+            {
+                "nom": "Shopping de dernière minute & souvenirs",
+                "terminee": false
+            },
+            {
+                "nom": "Séance photos souvenirs",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 12,
+        "date": "28/09/2026",
+        "lieu": "Montréal",
+        "taches": [
+            {
+                "nom": "🎒 Préparer les bagages pour le périple du lendemain",
+                "terminee": false
+            },
+            {
+                "nom": "Dernières visites à Montréal (Musées ou parcs)",
+                "terminee": false
+            },
+            {
+                "nom": "Dîner d'adieu à Montréal",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 13,
+        "date": "29/09/2026",
+        "lieu": "Périple à Québec",
+        "taches": [
+            {
+                "nom": "🚙 Trajet tôt vers la ville de Québec (environ 3h de route)",
+                "terminee": false
+            },
+            {
+                "nom": "🏰 Matin : Château Frontenac & Terrasse Dufferin",
+                "terminee": false
+            },
+            {
+                "nom": "🚪 Passage par la Porte Saint-Jean",
+                "terminee": false
+            },
+            {
+                "nom": "🍁 Midi : Quartier Petit-Champlain, Place Royale & déjeuner québécois",
+                "terminee": false
+            },
+            {
+                "nom": "🧗 Après-midi : Escalier Casse-Cou & Vieux-Port",
+                "terminee": false
+            },
+            {
+                "nom": "🪖 Promenade sur les Plaines d'Abraham",
+                "terminee": false
+            },
+            {
+                "nom": "🛏️ Installation et nuitée à Québec (ou retour)",
+                "terminee": false
+            }
+        ]
+    },
+    {
+        "jour": 14,
+        "date": "30/09/2026",
+        "lieu": "Vol Retour",
+        "taches": [
+            {
+                "nom": "🥞 Matinée tranquille et brunch",
+                "terminee": false
+            },
+            {
+                "nom": "🚗 Transfert vers l'aéroport",
+                "terminee": false
+            },
+            {
+                "nom": "✈️ Vol de retour vers la France",
+                "terminee": false
+            }
+        ]
+    }
+]
